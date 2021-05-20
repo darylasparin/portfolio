@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Profileimage from "../images/prof2.png";
+import file from "../files/johndarylasparin.pdf";
 
 function About() {
   return (
@@ -66,8 +67,10 @@ function About() {
               xs={12}
               className="bg-rose button-hover btn-1 d-flex  rounded-pill  justify-content-center align-items-center"
             >
-              <i className="fal fa-cloud-download-alt p-3 px-2"></i>
-              Download CV
+              <a href={file} className="text-white  text-decoration-none">
+                <i className="fal fa-cloud-download-alt p-3 px-2"></i>
+                Download CV
+              </a>
             </Col>
             <Col lg={5} md={3} sm={5} xs={12} className="nomp">
               <a href="#contact" className="text-white  text-decoration-none">
