@@ -1,0 +1,58 @@
+.container p {
+  overflow: hidden;
+}
+
+.typed-text {
+  color: #fb595c;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1px;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+.cursor.typing {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+/*# sourceMappingURL=style.css.map */
